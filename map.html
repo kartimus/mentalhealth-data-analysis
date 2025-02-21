@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_896e3b50efb09290d3af6d7384d1f16c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_896e3b50efb09290d3af6d7384d1f16c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_896e3b50efb09290d3af6d7384d1f16c = L.map(
+                "map_896e3b50efb09290d3af6d7384d1f16c",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1b3b49e1de38e4280662fefe55b05cd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b1b3b49e1de38e4280662fefe55b05cd.addTo(map_896e3b50efb09290d3af6d7384d1f16c);
+        
+    
+            var marker_cluster_cbc79b19f51f8ac0bce31a00228d478b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_230ec04297b670efe220f6d41c460b96 = L.marker(
+                [61.46907614534896, -98.14238137209708],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_f8066e8fddee02e09c0595006c0203a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_230ec04297b670efe220f6d41c460b96.setIcon(icon_f8066e8fddee02e09c0595006c0203a5);
+        
+    
+        var popup_e418353e8120f6650adb2dadb9c55e0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b98f698e5b7ef9f36a9efdb674d7251 = $(`<div id="html_5b98f698e5b7ef9f36a9efdb674d7251" style="width: 100.0%; height: 100.0%;">Country: Canada<br>Family History (Yes): 7718.0<br>Has treatment (Yes): 10102.0<br>Care options (Yes): 6850.0<br>Self employed (Yes): 2862.0</div>`)[0];
+                popup_e418353e8120f6650adb2dadb9c55e0d.setContent(html_5b98f698e5b7ef9f36a9efdb674d7251);
+            
+        
+
+        marker_230ec04297b670efe220f6d41c460b96.bindPopup(popup_e418353e8120f6650adb2dadb9c55e0d)
+        ;
+
+        
+    
+    
+            var marker_534c7a17827142d18bd869a5d7c13d9b = L.marker(
+                [-28.947033259979115, 25.048013879861678],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_ea9fb89b25684c2d646c2643d5f6e02a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_534c7a17827142d18bd869a5d7c13d9b.setIcon(icon_ea9fb89b25684c2d646c2643d5f6e02a);
+        
+    
+        var popup_8a05f4ba6a789c500667d186cec975d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b08d515013b16f4e6ee475c58db0382 = $(`<div id="html_9b08d515013b16f4e6ee475c58db0382" style="width: 100.0%; height: 100.0%;">Country: South Africa<br>Family History (Yes): 1214.0<br>Has treatment (Yes): 1214.0<br>Care options (Yes): 824.0<br>Self employed (Yes): 434.0</div>`)[0];
+                popup_8a05f4ba6a789c500667d186cec975d7.setContent(html_9b08d515013b16f4e6ee475c58db0382);
+            
+        
+
+        marker_534c7a17827142d18bd869a5d7c13d9b.bindPopup(popup_8a05f4ba6a789c500667d186cec975d7)
+        ;
+
+        
+    
+    
+            var marker_14634c63153bf95ac17820583986ddb7 = L.marker(
+                [-10.806773643498916, -53.05434003576711],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_5f174c3c14a78eab6216d4c24e125242 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_14634c63153bf95ac17820583986ddb7.setIcon(icon_5f174c3c14a78eab6216d4c24e125242);
+        
+    
+        var popup_57d0312db9ab03034e12d96e8c201c3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adbc2c0f71eae54b87d886e128599b30 = $(`<div id="html_adbc2c0f71eae54b87d886e128599b30" style="width: 100.0%; height: 100.0%;">Country: Brazil<br>Family History (Yes): 780.0<br>Has treatment (Yes): 780.0<br>Care options (Yes): 780.0<br>Self employed (Yes): 780.0</div>`)[0];
+                popup_57d0312db9ab03034e12d96e8c201c3e.setContent(html_adbc2c0f71eae54b87d886e128599b30);
+            
+        
+
+        marker_14634c63153bf95ac17820583986ddb7.bindPopup(popup_57d0312db9ab03034e12d96e8c201c3e)
+        ;
+
+        
+    
+    
+            var marker_d3092e88cf6e8a39a4095c0ca3b521a0 = L.marker(
+                [42.46070432663372, -2.8766966992706267],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_e5ac19e212a67900ee2d62a059d2cbe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d3092e88cf6e8a39a4095c0ca3b521a0.setIcon(icon_e5ac19e212a67900ee2d62a059d2cbe0);
+        
+    
+        var popup_d1a7932a5c5db3885510e7b832339078 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30b6d4fbc2776b33c7f522ac8c0c937d = $(`<div id="html_30b6d4fbc2776b33c7f522ac8c0c937d" style="width: 100.0%; height: 100.0%;">Country: France<br>Family History (Yes): 780.0<br>Has treatment (Yes): nan<br>Care options (Yes): 780.0<br>Self employed (Yes): 390.0</div>`)[0];
+                popup_d1a7932a5c5db3885510e7b832339078.setContent(html_30b6d4fbc2776b33c7f522ac8c0c937d);
+            
+        
+
+        marker_d3092e88cf6e8a39a4095c0ca3b521a0.bindPopup(popup_d1a7932a5c5db3885510e7b832339078)
+        ;
+
+        
+    
+    
+            var marker_4a166b20c09c2537338bba7c768b38b7 = L.marker(
+                [22.92500640740852, 79.59370376325381],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_93851804fec648a41c1356865675fbed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a166b20c09c2537338bba7c768b38b7.setIcon(icon_93851804fec648a41c1356865675fbed);
+        
+    
+        var popup_2e5501205b33604d49b930bb057491dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c4229e2d994444d5a6c58c3aab9ec38 = $(`<div id="html_5c4229e2d994444d5a6c58c3aab9ec38" style="width: 100.0%; height: 100.0%;">Country: India<br>Family History (Yes): 434.0<br>Has treatment (Yes): 824.0<br>Care options (Yes): nan<br>Self employed (Yes): 390.0</div>`)[0];
+                popup_2e5501205b33604d49b930bb057491dc.setContent(html_5c4229e2d994444d5a6c58c3aab9ec38);
+            
+        
+
+        marker_4a166b20c09c2537338bba7c768b38b7.bindPopup(popup_2e5501205b33604d49b930bb057491dc)
+        ;
+
+        
+    
+    
+            var marker_8e58c041ae9d21346b9e205a24aaabc8 = L.marker(
+                [62.811484968080336, 16.59626584684802],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_0352337f61270f439a29e7808bc7586b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e58c041ae9d21346b9e205a24aaabc8.setIcon(icon_0352337f61270f439a29e7808bc7586b);
+        
+    
+        var popup_0be3f2199aa7659b84d90d089177bd98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3e067dcd8dc711273b20656de6631df = $(`<div id="html_e3e067dcd8dc711273b20656de6631df" style="width: 100.0%; height: 100.0%;">Country: Sweden<br>Family History (Yes): 868.0<br>Has treatment (Yes): 824.0<br>Care options (Yes): 1258.0<br>Self employed (Yes): nan</div>`)[0];
+                popup_0be3f2199aa7659b84d90d089177bd98.setContent(html_e3e067dcd8dc711273b20656de6631df);
+            
+        
+
+        marker_8e58c041ae9d21346b9e205a24aaabc8.bindPopup(popup_0be3f2199aa7659b84d90d089177bd98)
+        ;
+
+        
+    
+    
+            var marker_de045823bffaa0dcbf133faa2f3edd49 = L.marker(
+                [51.13372269040778, 10.288485092742851],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_878210490ada1f4abec113222acd7b21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de045823bffaa0dcbf133faa2f3edd49.setIcon(icon_878210490ada1f4abec113222acd7b21);
+        
+    
+        var popup_9a83d093e1ebc7684eff41634809d56a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14edc49cd0c1befa0f6c43dd5af88c3d = $(`<div id="html_14edc49cd0c1befa0f6c43dd5af88c3d" style="width: 100.0%; height: 100.0%;">Country: Germany<br>Family History (Yes): 1560.0<br>Has treatment (Yes): 2340.0<br>Care options (Yes): 1950.0<br>Self employed (Yes): 1170.0</div>`)[0];
+                popup_9a83d093e1ebc7684eff41634809d56a.setContent(html_14edc49cd0c1befa0f6c43dd5af88c3d);
+            
+        
+
+        marker_de045823bffaa0dcbf133faa2f3edd49.bindPopup(popup_9a83d093e1ebc7684eff41634809d56a)
+        ;
+
+        
+    
+    
+            var marker_e021098cbd38671d7101db3ff70a47fd = L.marker(
+                [46.79173768366762, 8.118300613385486],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_e4653f8d0d162dbc13d4aa45fa64b7a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e021098cbd38671d7101db3ff70a47fd.setIcon(icon_e4653f8d0d162dbc13d4aa45fa64b7a7);
+        
+    
+        var popup_5b1e3960de5138b0327db1f6d2e69462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_089b26728f6422b1bf9d0a2d07de3fd4 = $(`<div id="html_089b26728f6422b1bf9d0a2d07de3fd4" style="width: 100.0%; height: 100.0%;">Country: Switzerland<br>Family History (Yes): 1170.0<br>Has treatment (Yes): 780.0<br>Care options (Yes): nan<br>Self employed (Yes): 390.0</div>`)[0];
+                popup_5b1e3960de5138b0327db1f6d2e69462.setContent(html_089b26728f6422b1bf9d0a2d07de3fd4);
+            
+        
+
+        marker_e021098cbd38671d7101db3ff70a47fd.bindPopup(popup_5b1e3960de5138b0327db1f6d2e69462)
+        ;
+
+        
+    
+    
+            var marker_e225b10cacb4c0de2faae3e9dec2547e = L.marker(
+                [52.298700374441786, 5.512217100965399],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_0181842de51f2d91dc3549516b914e10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e225b10cacb4c0de2faae3e9dec2547e.setIcon(icon_0181842de51f2d91dc3549516b914e10);
+        
+    
+        var popup_d4857e4710a3dce752c7148399254b5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f4cf6ba7e767cc9ef15e5173972ab8a = $(`<div id="html_4f4cf6ba7e767cc9ef15e5173972ab8a" style="width: 100.0%; height: 100.0%;">Country: Netherlands<br>Family History (Yes): 2340.0<br>Has treatment (Yes): 1950.0<br>Care options (Yes): 390.0<br>Self employed (Yes): 1170.0</div>`)[0];
+                popup_d4857e4710a3dce752c7148399254b5f.setContent(html_4f4cf6ba7e767cc9ef15e5173972ab8a);
+            
+        
+
+        marker_e225b10cacb4c0de2faae3e9dec2547e.bindPopup(popup_d4857e4710a3dce752c7148399254b5f)
+        ;
+
+        
+    
+    
+            var marker_e357159b26db7f36de0070bc4065c84d = L.marker(
+                [53.18059120995006, -8.010236544877012],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_e1d85d9bfb661b2cd824079b95d7682b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e357159b26db7f36de0070bc4065c84d.setIcon(icon_e1d85d9bfb661b2cd824079b95d7682b);
+        
+    
+        var popup_6f57b42e0b24f56b7863c30c65d7e653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33d313d2285e416878419b1110c15b47 = $(`<div id="html_33d313d2285e416878419b1110c15b47" style="width: 100.0%; height: 100.0%;">Country: Ireland<br>Family History (Yes): 2384.0<br>Has treatment (Yes): 2730.0<br>Care options (Yes): 824.0<br>Self employed (Yes): 1950.0</div>`)[0];
+                popup_6f57b42e0b24f56b7863c30c65d7e653.setContent(html_33d313d2285e416878419b1110c15b47);
+            
+        
+
+        marker_e357159b26db7f36de0070bc4065c84d.bindPopup(popup_6f57b42e0b24f56b7863c30c65d7e653)
+        ;
+
+        
+    
+    
+            var marker_e881eb9ed952a81b52d479ca4c98c74c = L.marker(
+                [-41.662578757158684, 172.70192594405574],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_8009dc6f4386230fa52d5c1ae9d319d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e881eb9ed952a81b52d479ca4c98c74c.setIcon(icon_8009dc6f4386230fa52d5c1ae9d319d7);
+        
+    
+        var popup_6b814dfacc91898e8bb297785eb3a23a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09d1c2b7d1594f25dd2133a32685d48c = $(`<div id="html_09d1c2b7d1594f25dd2133a32685d48c" style="width: 100.0%; height: 100.0%;">Country: New Zealand<br>Family History (Yes): 824.0<br>Has treatment (Yes): 1604.0<br>Care options (Yes): 780.0<br>Self employed (Yes): nan</div>`)[0];
+                popup_6b814dfacc91898e8bb297785eb3a23a.setContent(html_09d1c2b7d1594f25dd2133a32685d48c);
+            
+        
+
+        marker_e881eb9ed952a81b52d479ca4c98c74c.bindPopup(popup_6b814dfacc91898e8bb297785eb3a23a)
+        ;
+
+        
+    
+    
+            var marker_a5d24947d0d8df70f937db8a6993758b = L.marker(
+                [-25.730654779726077, 134.50277547536595],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_300038fe88b921c8063797f3da8321c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a5d24947d0d8df70f937db8a6993758b.setIcon(icon_300038fe88b921c8063797f3da8321c3);
+        
+    
+        var popup_fe2d64b51ab57c8213f2d40b9e42864d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccb8e561ec4d028991a8d8d8d0375896 = $(`<div id="html_ccb8e561ec4d028991a8d8d8d0375896" style="width: 100.0%; height: 100.0%;">Country: Australia<br>Family History (Yes): 2906.0<br>Has treatment (Yes): 3642.0<br>Care options (Yes): 2428.0<br>Self employed (Yes): 780.0</div>`)[0];
+                popup_fe2d64b51ab57c8213f2d40b9e42864d.setContent(html_ccb8e561ec4d028991a8d8d8d0375896);
+            
+        
+
+        marker_a5d24947d0d8df70f937db8a6993758b.bindPopup(popup_fe2d64b51ab57c8213f2d40b9e42864d)
+        ;
+
+        
+    
+    
+            var marker_ea60739baf693fba32c6ef95894e4259 = L.marker(
+                [56.06393446179454, 9.876372937675002],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_2f41bb429c11afddeac5664d6b59061b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ea60739baf693fba32c6ef95894e4259.setIcon(icon_2f41bb429c11afddeac5664d6b59061b);
+        
+    
+        var popup_43b5ae100512167d9feaa54baa96b8bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ef3370f709f7b72b90eba28ce0a14a8 = $(`<div id="html_5ef3370f709f7b72b90eba28ce0a14a8" style="width: 100.0%; height: 100.0%;">Country: Denmark<br>Family History (Yes): 780.0<br>Has treatment (Yes): 780.0<br>Care options (Yes): 780.0<br>Self employed (Yes): 780.0</div>`)[0];
+                popup_43b5ae100512167d9feaa54baa96b8bd.setContent(html_5ef3370f709f7b72b90eba28ce0a14a8);
+            
+        
+
+        marker_ea60739baf693fba32c6ef95894e4259.bindPopup(popup_43b5ae100512167d9feaa54baa96b8bd)
+        ;
+
+        
+    
+    
+            var marker_f459d32285bc5a457bb14a899fb757fb = L.marker(
+                [53.91477348053706, -2.8531353951805545],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_d1e12d97c1dc1af27294e067873f4858 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f459d32285bc5a457bb14a899fb757fb.setIcon(icon_d1e12d97c1dc1af27294e067873f4858);
+        
+    
+        var popup_40de675f08414fc2e9fb401e25b7ac3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5611e9c4a68f164c37eba1d5b3384432 = $(`<div id="html_5611e9c4a68f164c37eba1d5b3384432" style="width: 100.0%; height: 100.0%;">Country: United Kingdom<br>Family History (Yes): 15172.0<br>Has treatment (Yes): 25400.0<br>Care options (Yes): 9926.0<br>Self employed (Yes): 7064.0</div>`)[0];
+                popup_40de675f08414fc2e9fb401e25b7ac3b.setContent(html_5611e9c4a68f164c37eba1d5b3384432);
+            
+        
+
+        marker_f459d32285bc5a457bb14a899fb757fb.bindPopup(popup_40de675f08414fc2e9fb401e25b7ac3b)
+        ;
+
+        
+    
+    
+            var marker_1877bfadd1f7326131a60064384f3554 = L.marker(
+                [44.1807677629747, 17.816883270390086],
+                {
+}
+            ).addTo(marker_cluster_cbc79b19f51f8ac0bce31a00228d478b);
+        
+    
+            var icon_d4be59d2af720eb64d1e0873f3ee41c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1877bfadd1f7326131a60064384f3554.setIcon(icon_d4be59d2af720eb64d1e0873f3ee41c6);
+        
+    
+        var popup_c3feeab308e5ebb9c5939c055be8d4d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1b6239ee502d17d6c7bcb7311f42d02 = $(`<div id="html_a1b6239ee502d17d6c7bcb7311f42d02" style="width: 100.0%; height: 100.0%;">Country: Bosnia and Herzegovina<br>Family History (Yes): 390.0<br>Has treatment (Yes): nan<br>Care options (Yes): nan<br>Self employed (Yes): nan</div>`)[0];
+                popup_c3feeab308e5ebb9c5939c055be8d4d3.setContent(html_a1b6239ee502d17d6c7bcb7311f42d02);
+            
+        
+
+        marker_1877bfadd1f7326131a60064384f3554.bindPopup(popup_c3feeab308e5ebb9c5939c055be8d4d3)
+        ;
+
+        
+    
+    
+            marker_cluster_cbc79b19f51f8ac0bce31a00228d478b.addTo(map_896e3b50efb09290d3af6d7384d1f16c);
+        
+</script>
+</html>
